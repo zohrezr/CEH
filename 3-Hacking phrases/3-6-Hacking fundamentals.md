@@ -36,3 +36,13 @@ IP:port -> 5.4.2.12:23
 - <b> Well-konwn ports </b> -> range from 1 to 1023
 - <b> Registered ports </b> -> range from 1024 to 49151
 - <b> Dynamic ports </b> -> range from 49152 to 65535
+
+DNS (Domain Name System)
+------------------------
+
+port -> 53
+
+سروری که domain رو به IP تبدیل می کنه.
+
+jadi.net -> DNS server -> 150.20.54.70
+

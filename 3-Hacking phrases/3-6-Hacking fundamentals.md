@@ -46,3 +46,41 @@ port -> 53
 
 jadi.net -> DNS server -> 150.20.54.70
 
+Network Devices
+---------------
+
+- <b> Routers </b>
+  - based on network addressing (IP)
+  - layer 3 traffic
+
+- <b> Switches </b>
+  - Hardware addressing (MAC)
+  - based on MAC address
+  - layer 2
+
+- <b> Proxies </b>
+  - layer 7 (Application) ->  کل ترافیک رو می فهمه، مسیریابی می تونه بکنه
+
+- <b> firewall </b>
+  - Packet filtering
+  - Stateful packet filtering
+  - Application proxies, which we covered earlier
+
+- <b> Inrusion Perevention System (IPS) </b>
+
+- <b> Inrusion Detection System (IDS) </b>
+
+OS
+--
+
+- <b> Microsoft Windows </b>
+- <b> Mac OS </b>
+- <b> Android </b>
+- <b> Linux </b>
+
+Bakcup
+------
+
+- <b> Full Backup </b>
+- <b> Different Backup </b>
+- <b> Incremental Backup </b> (Recommended)

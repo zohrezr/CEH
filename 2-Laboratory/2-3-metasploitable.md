@@ -6,3 +6,5 @@ metasploitable
  از سایت sourceforge می تونیم دانلودش کنیم.
 
  یه فایل vmdk. میده. -> یه نوع فایله که virtualbox می فهمتش. (فایل iso نداره)
+
+نتورک رو bridge میذاریم.

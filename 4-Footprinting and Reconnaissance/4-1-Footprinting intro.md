@@ -1,54 +1,97 @@
-Footprinting and Reconnaissance
-===============================
+$\color{#b91646}{\textsf{Footprinting and Reconnaissance}}$
+============================================================
+
 
 -> آیا اجازه داریم اینجا رو هک کنیم؟
 
 قدم اول هک، جمع آوری اطلاعات است. اطلاعات باعث می شه دقیق تر حمله کنید (جای دقیق تر با آگاهی بیشتر)
 
-- <b> Footprinting vs Scanning vs Enumeration </b>
+### $\color{#25678D}{\textsf{Footprinting vs Scanning vs Enumeration}}$
 
-  - Footpring
+  - <b> Footpring </b>
 
   در حد سرچ توی گوگل، رفتن به سایت شرکت، فهمیدن اینکه جاش کجاس
 
-  - Scannig
+  - <b> Scannig </b>
 
   شبکه ای تره، اسکن اجرا می کنی، می بینی چه IP هایی روش بازه
 
-  - Enumeration
+  - <b> Enumeration </b>
 
   دقیق تر می کنه همه ی کارهامونو -> مدل OS چیه، کجا user ها ذخیره می شن
 
 
-- <b>Passive vs Active</b>
-  -passive
-  یعنی شما مستقیما اونجا کاری انجام نمیدی
+_______________________
 
-- <b>Their site itself</b>
+### $\color{#25678D}{\textsf{Passive vs Active}}$
 
-- <b>Internet Archive</b>
+- <b> passive </b>
 
-- <b>Netcraft</b>
+یعنی شما مستقیما اونجا کاری انجام نمیدی، حتی توی سایتش هم ممکنه نری چون IP می افته
 
-- <b>Google (General, specific search the vulnerability)</b>
+مثلا میری توی گوگل سرچ می کنی ببینی توی فرما در موردش چی نوشتن
 
-- <b>Google Maps</b>
+- <b> active </b>
 
-- <b>AnyWho</b>
+مستقیما میری سراغ شرکت، مثلا به یکی از User ها ایمیل بزنی، تماس تلفنی بگیری و ...
 
-- <b>Monster, Jobinja, … </b>
+- <b> Pseudonymous </b>
 
-- <b> Forum, blogs, … even</b>
+آدما ممکنه عضو یه سازمان باشن ولی یه وبلاگ شخصی هم داشته باشن و توی وبلاگ شخصی از شرکت یکسری دیتا به صورت ناخواسته ارائه بدن
 
-- <b> Social Networks </b>
+_______________________
 
-- <b> EMail (attack vector & raw info like headers) </b>
+### $\color{#25678D}{\textsf{Their site itself}}$
 
-- <b> whois </b>
+### $\color{#25678D}{\textsf{Internet Archive}}$
 
-- <b> nslookup </b>
+مثلا توی html source code یکسری دیتا هست (کدهای کامنت شده)
 
-- <b> traceroute / tracert </b>
+_______________________
 
-- <b> Social Eng.</b>
+### $\color{#25678D}{\textsf{Netcraft}}$
 
+سایت هایی مثل netcraft می تونن دیتای زیادی بدن -> در مورد سایت اطلاعات میده
+
+### $\color{#25678D}{\textsf{AnyWho}}$
+
+سایتی برای گرفتن اطلاعات آدم ها
+
+_______________________
+
+### $\color{#25678D}{\textsf{General, specific search the vulnerability}}$
+
+### $\color{#25678D}{\textsf{Google Maps}}$
+
+اطلاعات شرکت در گوگل
+_______________________
+
+### $\color{#25678D}{\textsf{Monster, Jobinja, …}}$
+
+جاهایی رو بگردین که آدم ها دنبال کار می کردن
+
+### $\color{#25678D}{\textsf{Forum, blogs, … even}}$
+
+### $\color{#25678D}{\textsf{Social Networks}}$
+
+جاهایی که آدم ها اطلاعات شخصی از خودشون میذارن
+_______________________
+
+### $\color{#25678D}{\textsf{Email (attack vector and raw info like headers)}}$
+
+
+یه ایمیل ساده که ازشون بگیری می تونی و از دیتای header اطلاعات بگیری
+
+_______________________
+
+### $\color{#25678D}{\textsf{EMail (whois)}}$
+
+### $\color{#25678D}{\textsf{EMail (nslookup)}}$
+
+### $\color{#25678D}{\textsf{EMail (traceroute / tracert)}}$
+
+کامندهایی که اطلاعات در مورد یه سایت میدن
+
+_______________________
+
+### $\color{#25678D}{\textsf{Social Eng.}}$

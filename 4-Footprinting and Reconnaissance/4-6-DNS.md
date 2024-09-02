@@ -4,7 +4,7 @@ $\color{#b91646}{\textsf{DNS}}$
 
 ____________________________
 
-### $\color{#105652}{\textsf{whois(command, online, applications (smart whois)}}$ 
+### $\color{#25678D}{\textsf{whois(command, online, applications (smart whois)}}$ 
 
 اطلاعاتی از domain رو میده.
 
@@ -13,7 +13,7 @@ ____________________________
 یکسری application هم داریم که whois رو انجام میدن.
 _______________________________________
 
-### $\color{#105652}{\textsf{DNS}}$ 
+### $\color{#25678D}{\textsf{DNS}}$ 
 
 
 - <b> Concept </b> -> DNS: Domain Name System: **Domain -> IP**

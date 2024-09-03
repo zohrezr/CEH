@@ -11,13 +11,13 @@ $\color{#b91646}{\textsf{idle}}$
 
 ## $\color{#105652}{\textsf{Open port}}$
 
-### $\color{#25678D}{\textsf{step 1}}$
+### $\color{#25678D}{\textsf{step 1: Probe the zombie's IP ID}}$
 
 مهاجم به پرینتر یه پکت SYN/ACK می فرسته. -> پکت بی ربط چون اصلا باهم SYN نکرده بودن.
 
 پرنتر برای اینکه این مشکل رو حل کنه یه RST به مهاجم می فرسته. RST یه **IP ID=31337** داره.
 
-### $\color{#25678D}{\textsf{step 2}}$
+### $\color{#25678D}{\textsf{step 2:Forge a SYN packet "from" the zombie}}$
 
 مهاجم یه پکت SYN درست می کنه (خودش همه چیزاشو مثل می تونه source تنظیم کنه). -> پکت SYN، پکت درست و عادی است.
 
@@ -29,7 +29,7 @@ $\color{#b91646}{\textsf{idle}}$
 
 زامبی (از همه جا بی خبر) به قربانی RST می فرسته و می گه نمی خوام وصل شم. عدد RST رو یکی میبره بالاتر **IP ID=31338**
 
-### $\color{#25678D}{\textsf{step 3}}$
+### $\color{#25678D}{\textsf{step 3:Probe the zombie's IP ID again}}$
 
 مهاجم متوجه نمی شه که IP ID زامبی یکی بیشتر شده.
 
@@ -39,13 +39,13 @@ $\color{#b91646}{\textsf{idle}}$
 _______________________________
 ## $\color{#105652}{\textsf{Close port}}$
 
-### $\color{#25678D}{\textsf{step 1}}$
+### $\color{#25678D}{\textsf{step 1: Probe the zombie's IP ID}}$
 
 مهاجم به پرینتر یه پکت SYN/ACK می فرسته. -> پکت بی ربط چون اصلا باهم SYN نکرده بودن.
 
 پرنتر برای اینکه این مشکل رو حل کنه یه RST به مهاجم می فرسته. RST یه **IP ID=31337** داره.
 
-### $\color{#25678D}{\textsf{step 2}}$
+### $\color{#25678D}{\textsf{step 2:Forge a SYN packet "from" the zombie}}$
 
 مهاجم یه پکت SYN درست می کنه (خودش همه چیزاشو مثل می تونه source تنظیم کنه). -> پکت SYN، پکت درست و عادی است.
 
@@ -57,7 +57,7 @@ _______________________________
 
 چون زامبی RST گرفته نیازی نیست جوابی برگردونه. -> IP ID تغییر نمی کنه.
 
-### $\color{#25678D}{\textsf{step 3}}$
+### $\color{#25678D}{\textsf{step 3:Probe the zombie's IP ID again}}$
 
 مهاجم متوجه نمی شه که IP ID زامبی تغییر کرده یا نه.
 

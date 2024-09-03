@@ -22,11 +22,13 @@ ________________
 - **Older systems: No response means port is open**
 - **RST shows close**
 
+همه ی بیت هارو روشن می کنه. -> پکت غیرعادی
+
 توی سیستم های مختلف فرق می کنه و خیلی چیز مطمئنی نیست.
 _______________
 ### $\color{#25678D}{\textsf{Fin scan (-sF, like Xmas, passes firewalls)}}$
 
-پکت FIN می فرسته فقط.
+پکت FIN می فرسته فقط. -> پکت غیرعادی
 
 معمولا از firewall رد می شه ولی stateful firewall ها ممکنه بگیرنشون.
 
@@ -42,7 +44,7 @@ ____________________
 _____________________
 ### $\color{#25678D}{\textsf{Fin scan (ACK scan (sends ACK, this wont pass stateful firewalls))}}$
 
-فقط یه دونه ACK می فرستیم.
+فقط یه دونه ACK می فرستیم. -> پکت غیرعادی
 
 وابسته به عملکرد firewall است.
 ___________________

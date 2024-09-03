@@ -59,3 +59,4 @@ ___________________
 __________________
 ### $\color{#25678D}{\textsf{Idle scan (lets see this one in depth!)}}$
 
+پارت بعدی.

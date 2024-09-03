@@ -7,3 +7,5 @@ $\color{#b91646}{\textsf{Solar network mapper}}$
 - **solarwinds Topology Mapper**
 
 یه برنامه برای کشف اطلاعات شبکه -> ویندوزی
+
+تقریبا کار nmap رو می کنه.

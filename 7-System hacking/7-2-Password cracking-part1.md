@@ -1,7 +1,7 @@
 $\color{#b91646}{\textsf{Password cracking}}$
 =============================================
 
-## $\color{#105652}{\textsf{Paswword}}$
+## $\color{#105652}{\textsf{Password}}$
 - **Some that one person can remember to prove herself to the system**
 
 پسوردها علاوه بر اینکه به شما می گن اجازه دارین login کنید یا نه دسترسی های user رو هم به شما میدن.

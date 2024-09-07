@@ -38,6 +38,14 @@ ___________________
 
 ### $\color{#25678D}{\textsf{Man In the Middle Attack}}$
 
+پروتکل های قدیمی دیتارو plain text رد می کردن ولی همیشه اینطوری نیست به خصوص وقتی که **(ssl-tls)https** داریم. -> در این حالت تمام connection ها encrypt و امن هستند.
+
+در این حالت هکر برای هک کردن از MITM استفاده می کنه.
+
+پروتکل https یه certificate داره.
+
+هکر بین ارتباط قربانی با مقصد می شه و هر connection ای که میاد رو منحرف می کنید به خودتون -> بازش می کنید، توشو می خونید و میدین به مقصد
+
 - **Burp Suite**
 - **Browser Exploitation Framework (BeEF)**
 - **SSL Strip, mitmproxy**

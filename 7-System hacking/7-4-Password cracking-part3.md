@@ -19,7 +19,7 @@ ________________________________
 چندتا تکنیک می تونه داشته باشه:
 
 - واقعا Hash پسوردهارو نشون بده
-- می تونیم keylogger داشته باشیم
+- می تونیم keylogger داشته باشیم.
 __________________________________
 ### $\color{#25678D}{\textsf{Hash Injection}}$
 
@@ -38,7 +38,11 @@ __________________________________
 فرض می کنیم با یه روشی hash پسوردها رو به دست آوردیم حالا چطوری می تونیم به پسورد اصلی برسیم؟
 
 
-### $\color{#25678D}{\textsf{Precomputed hashes / rainbow (winrtgen + rcrack_gui.exe)}}$
+### $\color{#25678D}{\textsf{Precomputed hashes / rainbow}}$
+
+ (winrtgen + rcrack_gui.exe)
+
+
 
 هش هایی که قبلا حساب شدن.
 
@@ -56,8 +60,22 @@ ____________________________________
 
 برنامه هایی مثل john the ripper داریم که میان از GPU استفاده می کنن (بهینه می کنه)
 
-Distributed Network Attacks (DNA)
-Simply, using distributed machines. Like SETI@Home
-Default Passwords
-USB Automated Password Theft (autorunning pspv.exe on windows)
+## $\color{#105652}{\textsf{Distributed Network Attacks (DNA)}}$
 
+### $\color{#25678D}{\textsf{using distributed machines}}$
+
+یه عالمه کامپیوتر مختلف از همه ی جای دنیا سعی می کنن hash رو بشکونن
+
+Simply, using distributed machines. Like SETI@Home
+
+## $\color{#105652}{\textsf{Default Passwords}}$
+
+می تونیم توی اینترنت دنبال default password های device های مختلف بگردین.
+
+## $\color{#105652}{\textsf{USB Automated Password Theft}}$
+
+ autorunning pspv.exe on windows
+
+برنامه ای مثل pspv، برنامه ایه برای ریکاوری کردن پسوردها -> یکسری دیتا می تونه از پسوردهای ویندوزی به شما بده.
+
+کافیه شما usb به صورت autorun درست کنید و این برنامه رو بذارید توی autorun و خروجی رو ضبط کنید.

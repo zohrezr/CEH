@@ -84,11 +84,11 @@ _______________________
 
 _______________________
 
-### $\color{#25678D}{\textsf{EMail (whois)}}$
+### $\color{#25678D}{\textsf{whois}}$
 
-### $\color{#25678D}{\textsf{EMail (nslookup)}}$
+### $\color{#25678D}{\textsf{nslookup}}$
 
-### $\color{#25678D}{\textsf{EMail (traceroute / tracert)}}$
+### $\color{#25678D}{\textsf{traceroute / tracert}}$
 
 کامندهایی که اطلاعات در مورد یه سایت میدن
 

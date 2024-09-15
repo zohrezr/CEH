@@ -57,8 +57,20 @@ _______________
 
 در نتیجه تمام دیتا از هکر رد می شه و می تونه sniff کنه
 
-On wireshark you can see this by filtering for “bootp”
-Defence? Switch untrusted ports can have DHCP server type messages on NO, just like a firewall. 
+____________________
+### $\color{#25678D}{\textsf{DHCP in wireshark}}$
 
-	
-![Uploading image.png…]()
+**On wireshark you can see this by filtering for “bootp”**
+
+توی wireshark اگر می خواین پروتکل رو ببینید باید `bootp` سرچ کنید.
+
+پکت های `bootp` برای DHCP هستن.
+
+____________
+### $\color{#25678D}{\textsf{Defence}}$
+
+**Switch untrusted ports can have DHCP server type messages on NO, just like a firewall.**
+
+مهم ترین راه جلوگیری port security است. -> می تونه بگه توی همه ی untrusted port هام به جز اون یه دونه trusted که به network اصلی وصله (از جمله DHCP)، کل server type message ها یعنی offer و Acknowledge رو **No** کنم.
+
+در نتیجه هیچ ریکوست سروری نمی تونه از port ها عادی (untrusted) رد بشه -> هر کامپیوتر می تونه فقط discover و request بفرسته.

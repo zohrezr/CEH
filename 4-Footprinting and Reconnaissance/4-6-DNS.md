@@ -4,7 +4,7 @@ $\color{#b91646}{\textsf{DNS}}$
 
 ____________________________
 
-### $\color{#25678D}{\textsf{whois(command, online, applications (smart whois)}}$ 
+### $\color{#25678D}{\textsf{whois(command, online, applications (smart whois))}}$ 
 
 اطلاعاتی از domain رو میده.
 

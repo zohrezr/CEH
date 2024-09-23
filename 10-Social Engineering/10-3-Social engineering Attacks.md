@@ -22,19 +22,45 @@ ________________
 
 یک sms برای قربانی ارسال می شه.
 _________________
-### $\color{#25678D}{\textsf{google hacking database}}$
-Vishing
+### $\color{#25678D}{\textsf{Vishing}}$
+
+**Voice phishing**
+
+با تقلید صدا قربانی رو گول زد. فضا سازی می کنن.
 
 _________________
-### $\color{#25678D}{\textsf{google hacking database}}$
-Cloning sites
+### $\color{#25678D}{\textsf{Cloning sites}}$
 
-### $\color{#25678D}{\textsf{google hacking database}}$
-Rouge sites (Just like trojans)
+یکسری برنامه مثل winhttp یا wget یا setoolkit یا ... می تونه سایت هارو clone کنن. (عین سایت رو تحویل شما بدن)
 
-### $\color{#25678D}{\textsf{google hacking database}}$
-Wifi vector
-Free account
-wifiphisher
-setoolkit
+برنامه هایی هستن که به شما اجازه میدن یه سایت بهش معرفی کنی و یه web server میاره بالا، قربانی وصل می شه به web server مهاجم ولی فکر می کنه به سرور اصلی وصله.
 
+____________________
+### $\color{#25678D}{\textsf{Rouge sites (Just like trojans)}}$
+
+سایت هایی که در ظاهر دارن کارای مثبتی می کنن ولی پشت صحنه دارن یه کارایی می کنن، شبیه مفهوم تروجان ها
+
+یه سایت درست می کنیم برای دانلود اهنگ بعد پسوردها رو نگه میدارم و بعد یه باره می گم همش باهم هک شد
+_______________________________
+### $\color{#25678D}{\textsf{Wifi vector}}$
+
+حمله هایی که به wifi انجام می شن.
+
+- **Free account**
+
+کامپیوتر مهاجم به یه طریقی به اینترنت وصله و بعد یه اکانت به اسم free internet درست می کنم.
+
+آدما میان می بینن یه wifi هست به صورت free و وصل می شن کاراشونو می کنن، مهاجم می تونه همه ی اونارو ببینه.
+
+- **wifiphisher**
+
+یک برنامه است توی کالی وجود داره. -> منو. داره
+
+نیاز به یک کارت شبکه و wifi داره.
+
+یه wifi واقعی وجود داره که کابران بهش وصلن. مهاجم از طریق برنامه ی wifiphisher به wifi می گه خودتو deactive کن در نتیجه کاربران از اینترنت قطع می شن و بعد خودشو به عنوان access point جدید با اسم همون قبلیه معرفی می کنه.
+
+- **setoolkit**
+
+یک برنامه است که منوهای زیادی داره. از clone گرفتن تا wifi و ...
+_________

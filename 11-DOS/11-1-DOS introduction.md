@@ -1,4 +1,4 @@
-$\color{#b91646}{\textsf{DOS introduction}}$
+$\color{#b91646}{\textsf{Denial Of Service(DOS) introduction}}$
 =============================================
 
 - **Understanding DoS**

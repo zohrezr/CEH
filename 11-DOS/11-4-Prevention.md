@@ -1,6 +1,8 @@
 $\color{#b91646}{\textsf{Prevention}}$
 ======================================
 
+## $\color{#105652}{\textsf{Tools}}$
+
 ### $\color{#25678D}{\textsf{Reduce Attack Surface}}$
 
 
@@ -79,12 +81,52 @@ ______________
 **Web Application Filtering (WAF). Will check if the request is valid and not fishy! WAF can do the HTTPS termination**
 
 
+یک ابزاره که تخصصش اینه که وقتی یک وب سرور پشتشه، ارتباط با سرور رو نگاه کنه و اگر یه چیزی مشکوکی داره رد می شه رو drop کنه.
 
 _________________
-Load Balancing / Application Delivery Controller (like BigIP F5)
-Sandboxing on application. Will prevent one DoS from Downing everything
-Having challenges (Captcha, Validate browser with JS)
-There are cloud services for preventing and attacking (sold as IP Stressers/DDoSer/Booter/ dark web)
+## $\color{#105652}{\textsf{Network}}$
 
+### $\color{#25678D}{\textsf{Load Balancing / Application Delivery Controller (like BigIP F5)}}$
 
+می تونیم ابزاری مثل BigIP F5 بذاریم. در واقع F5 یک device است از شرکت BigIP
 
+به این صورت استفاده می شه که میذاریمش پشت چندتا سرور و می تونه Load balance کنه. request رو می گیره و به صورت Load balance به سرورها می فرسته.
+______________
+## $\color{#105652}{\textsf{Progaramming}}$
+
+### $\color{#25678D}{\textsf{Sandboxing on application}}$
+
+**Sandboxing on application. Will prevent one DoS from Downing everything**
+
+استفاده از sandboxing. -> به جای اینکه یه سرور داشته باشیم که apache، mysql و ... روش run شده باشه و اگر apache دچار مشکل شد و انقدر cpu مصرف کنه که همه چیز دچار مشکل بشه می تونیم سرویس هارو جدا جدا کنیم.
+
+مثلا برای هر کدوم یه حد max در مصرف منابع تعریف کنیم.
+
+سیستم هارو از هم جدا می کنیم.
+
+___________________
+### $\color{#25678D}{\textsf{Having challenges }}$
+
+**Having challenges (Captcha, Validate browser with JS)**
+
+چالش بذاریم مثل کپچا گذاشتن.
+
+یا با مرورگر validate انجام بشه. -> مثل عکس هایی که می گه چراغ راهنماییارو پیدا کن توی عکس
+
+______________
+### $\color{#25678D}{\textsf{cloud services}}$
+
+**There are cloud services for preventing and attacking (sold as IP Stressers/DDoSer/Booter/ dark web)**
+
+می تونیم از cload service ها مثل cloadflare یا ابرآروان استفاده کرد.
+
+خودش می گه من DNS شمام، DNS رو بذار پشت من و هر request ای اومد اول بیاد به من و من خودم می فرستم برات.
+
+می تونه خودش https رو انجام بده دیگه سرور اصلی نیاز نیست tls حساب کنه.
+
+اگر ریکوئستی اومد که خیلی زیاد بود من drop می کنم.
+
+اگر سرور اصلی down شد، صفحه ای که cache کرده رو نشون میده.
+
+جلوی DDoS رو می گیره.
+_____________________

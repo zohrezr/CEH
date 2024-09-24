@@ -1,20 +1,11 @@
 $\color{#b91646}{\textsf{DOS layer}}$
 ======================================
 
-- **Fragmentation (server can not rebuild packets). L4**
-- **TCP-STATE exhausting (just sending SYN!)**
-- **UDP flooding (forcing a lot of destination unreachable ansewrs). L4**
-- **DNS, NTP, SSDP, SNMP, …**
-- **ICMP (hping flood, ping of death (large))**
-- **SMURF (reverse ICMP flood)**
-- **Fraggle (SMURF with UDP)**
-- **LAND (send traffic to traget with its own source! :) )**
-- **PDoS (permanent DoS). Phlashing (updating firmwares -> bricking)**
-- **Using Social media and ask people to attack using LOIC or JS LOIC**
-- **Application layer (say requesting large searches)**
-- **Volumetric (too much request)**
-- **Buffer Overflow**
+### $\color{#25678D}{\textsf{Fragmentation}}$
 
+- **Fragmentation (server can not rebuild packets). L4**
+
+***لایه 4***
 یعنی یه کاری بکنی که سرویس قطع بشه (می تونی هر کاری بکنی که سرویس قطع بشه، توی 7 لایه ی شبکه ای)
 
 مجموعه ی زیادی از حمله ها در لایه ی 4 (UDP, TCP) اتفاق می افتن.
@@ -24,3 +15,73 @@ $\color{#b91646}{\textsf{DOS layer}}$
 سرور که داره پکت هارو می گیره، پکت هارو می چینه کنار هم که فایل رو کامل کنه -> سرورپکت های 121 و 122 رو نگه میداره و منتظر پکت های 107 تا 120 می مونه. در نهایت فکر می کنه این پکت ها گم شدن.
 
 در نتیجه سرور مشغول نگه داشته می شه.
+
+______________________________
+### $\color{#25678D}{\textsf{TCP-STATE exhausting}}$
+- **TCP-STATE exhausting (just sending SYN!)**
+
+***لایه 4***
+خسته اش کنم. -> یه کاری کنم connection مشکل داشته باشه.
+
+با توجه به TCP 3way handshake می تونیم کارهای غیرعادی کرد. 
+
+مثلا مهاجم SYN بفرسته و سرور ACK جواب بده ولی دیگه مهاجم چیزی نفرسته. در نتیجه سرور یه مدتی connection رو باز نگه میداره تا مهاجم جواب بده.
+
+یا الکی به سروری که اصلا وصل نشدم، یه دونه FIN بفرستم و بگم connection رو ببند، سرور هم RST می فرسته چون اصلا همچین connection ای نداشته.
+
+اگر این کارهارو پشت سرهم توی مدت زمان کم انجام بدیم، سرور به مشکل می خوره.
+
+_____________________
+### $\color{#25678D}{\textsf{UDP flooding}}$
+- **UDP flooding (forcing a lot of destination unreachable ansewrs). L4**
+
+***لایه 4***
+
+در UDP مهاجم دیتا می فرسته به یه Port، سرور دیتارو روی port دریافت می کنه و میده به برنامه ای که نیازش داره و مهاجم هیچ جوابی نمی گیره مپر اینکه به یه port بسته بفرسته  چون سرور جواب میده که این UDP port بسته است.
+
+اگر تعداد پکت های زیادی رو در مدت زمان کمی به یه port بسته در UDP بفرستیم، سرور به مشکل می خوره.
+
+_________________________
+### $\color{#25678D}{\textsf{DNS, NTP, SSDP, SNMP, …}}$
+- **DNS, NTP, SSDP, SNMP, …**
+
+***لایه 7**
+در لایه های دیگه هم می شه حمله انجام بدیم -> هر پروتکلی که داره اجرا می شه روی اون ها حمله انجام بدیم.
+
+مثلا سوال های ساده بپرسیم -> به یک وب سرور بارها در مدت زمان کم بگیم صفحه ی اولتو به من بده.
+__________________________
+### $\color{#25678D}{\textsf{ICMP}}$
+- **ICMP (hping flood, ping of death (large))**
+
+پکت ICMP پکت ping است. -> یک پکت مخصوصی است که برای ping کردن سرورها استفاده می شه. -> port نداره (TCP و UDP هستن که port دارن)
+
+
+حالت عادی پکت ICMP که میاد یک ICMP request است که یه جواب می گیره به اسم ICMP reply -> می گیم ping کار کرد. (هر یه دونه ping ای که می فرستیم این اتفاق می افته)
+
+مهاجم می تونه پکت های ICMP چرت و پرت بفرسته.
+
+ساده ترین کار اینه که در زمان کم پشت سرهم ICMP بفرستیم. (تا جایی که cpu توان داره) -> ***hping flood***
+
+
+پکت ping در حالت عادی 56 بایت است ولی می تونه تا 65535 بایت هم بزرگ بشه. 
+
+به صورت عادی همه ی سیستم عامل ها برنامه ای که نوشتن به صورت پیش فرض یه بافر درست می کنه، ping رو می ریزه اونجا و بهش جواب میده. ظرفیت بافر همیشه 64k در نظر گرفته شده.
+
+اگر یه ping بزرگ درست کنیم که ظرفیتش بیشتر از 64k باشه می شه ***ping of death*** در نتیجه سیستم crash می کنه.
+
+الان جلوشو گرفتن.
+_______________
+### $\color{#25678D}{\textsf{SMURF}}$
+- **SMURF (reverse ICMP flood)**
+
+
+_______________________
+- **Fraggle (SMURF with UDP)**
+- **LAND (send traffic to traget with its own source! :) )**
+- **PDoS (permanent DoS). Phlashing (updating firmwares -> bricking)**
+- **Using Social media and ask people to attack using LOIC or JS LOIC**
+- **Application layer (say requesting large searches)**
+- **Volumetric (too much request)**
+- **Buffer Overflow**
+
+

@@ -133,14 +133,21 @@ _______________
 ### $\color{#25678D}{\textsf{Application layer}}$
 - **Application layer (say requesting large searches)**
 
+توی لایه ی 7 می تونیم انجام بدیم
 
+مثلا ISP شما اجاره میده request بدین history کارتون مثلا مصرف پهنای باند در 6 ماه گذشته رو به صورت ریز نشون بده -> این خیلی کار بیشتری میبره از refersh کردن صفحه ی اول سایت.
+
+اگر افراد این رو request بدن بهتره تا صفحه ی اول سایت.
+
+یا مثلا یه جاهایی اجازه میده regex بزنیم توی سایت ها، اگر یه regex های چرتی مثل +[+a] بزنید، regex engin گیج می شه و چون سنگینه خیلی وقتا باعث می شه crash کنه.
 ______________________
 ### $\color{#25678D}{\textsf{Volumetric}}$
 - **Volumetric (too much request)**
 
 
 __________________
-
+### $\color{#25678D}{\textsf{Buffer Overflow}}$
 - **Buffer Overflow**
 
 
+________________

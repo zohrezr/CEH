@@ -116,11 +116,31 @@ ________________________
 ### $\color{#25678D}{\textsf{PDoS}}$
 - **PDoS (permanent DoS). Phlashing (updating firmwares -> bricking)**
 
+مثلا لگد به کامپیوتر بزنید و کامپیوتر بشکنه و backup هم نداشته باشن، چند روز طول می کشه سرویس بیاد بالا. -> ***PDoS***
+
+یه روشی پیدا کنید که از راه دور بتونید firewar یه device رو update کنید یا عوض کنید و یه firewar چرتی روش بنویسید -> ***phlashing***
+
+مثلا روتر یک شبکه ای رو از راه دور flash کنید.
 
 ___________________
+### $\color{#25678D}{\textsf{Social media}}$
 - **Using Social media and ask people to attack using LOIC or JS LOIC**
+
+مثلا آدم ها از صدا و سیما شاکی هستن و همشون باهم می گن کامپیوترتونو باز کنید و همتون باهم صفحه ی صدا و سیما رو refersh کنید در نتیجه به سرور فشار میاد و اگر یکی واقعا بخواد صفحه ی صدا و سیما رو ببینه نمی تونه. -> ***refersh***
+
+می تونیم از ***LOIC*** استفاده کنیم که یک برنامه اس که می تونه یک آدرسی بگیره و بهش حمله کنه. می تونیم توی social media به همه بگیم این کارو کنن (توی سایت sourceforge است)
+_______________
+### $\color{#25678D}{\textsf{Application layer}}$
 - **Application layer (say requesting large searches)**
+
+
+______________________
+### $\color{#25678D}{\textsf{Volumetric}}$
 - **Volumetric (too much request)**
+
+
+__________________
+
 - **Buffer Overflow**
 
 

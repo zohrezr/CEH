@@ -77,11 +77,47 @@ _______________
 ### $\color{#25678D}{\textsf{SMURF}}$
 - **SMURF (reverse ICMP flood)**
 
+فرض کنید یه سرور داریم که خودمون بهش ping می فرستیم و خسته اش می کنیم. -> می تونه مارو block کنه یا کارهای دیگه.
 
+اگر botnet داشته باشیم و به همون سرور از جاهای مختلف ping بفرستیم و خسته اش کنیم، خیلی کار سرور سخت تر است.
+
+
+می تونیم حمله ی SMURF کنیم.
+
+وقتی ping می کنیم یه پکت request میره که src و dst مشخصه. و سرور طبق همین reply رو می فرسته به src
+
+فرض کنید سرور هدذف 17 است، مهاجم 16 و یه سیستم دیگه داریم که 15 است.
+
+مهاجم(16) یه پکت ICMP request درست می کنه که src=17 و dst=15 باشه.
+
+این پکت می رسه به 15 و سیستم 15 طبق بسته فکر می کنه 17 بهش ping فرستاده، در نتیجه reply رو برای 17 می فرسته. (ممکنه 17 هم rst بفرسته)
+
+
+حالا می تونیم به جای اینکه dst=15 بذاریم dst رو برابر broadcast IP بذاریم. هر کی به broadcast یه packet بفرسته، تمام کامپیوترهای شبکه می گیرنش.
+
+پس مهاجم یه پکت ISMP request می فرست src=17 و dst=255(broadcast) در نتیجه همه ی کامپیوترهای شبکه می گیرنش پس همشون به 17 یه ICMP reply می فرستن.
 _______________________
+### $\color{#25678D}{\textsf{Fraggle}}$
 - **Fraggle (SMURF with UDP)**
+
+شبیه SMURF است ولی در واقع با UDP اتفاق می افته.
+
+________________________
+### $\color{#25678D}{\textsf{LAND}}$
 - **LAND (send traffic to traget with its own source! :) )**
+
+قدیمیه روی ویندوز xpsp2 و 2003 هنوز کار می کنه.
+
+مهاجم (16) یه پکت میذاره توی شبکه که src=17 و dst=17 باشه و بخواد ازش که یه کار شبکه ای بکنه.
+
+قربانی (17) پکت رو می گیره، بعد به خودش جواب میده و ... در نهایت می افته توی یه loop و سیستم عامل crash می کنه.
+
+________________________
+### $\color{#25678D}{\textsf{PDoS}}$
 - **PDoS (permanent DoS). Phlashing (updating firmwares -> bricking)**
+
+
+___________________
 - **Using Social media and ask people to attack using LOIC or JS LOIC**
 - **Application layer (say requesting large searches)**
 - **Volumetric (too much request)**
